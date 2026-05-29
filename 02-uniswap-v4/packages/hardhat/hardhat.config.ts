@@ -32,9 +32,11 @@ const config: HardhatUserConfig = {
             enabled: true,
             // https://docs.soliditylang.org/en/latest/using-the-compiler.html#optimizer-options
             runs: 200,
-            // Compiles without stack-too-deep.
-            viaIR: true,
           },
+          // Compiles via the IR pipeline so larger functions don't hit
+          // "stack too deep". `viaIR` is a sibling of `optimizer`, not a key
+          // inside it (Hardhat rejects it as an unknown optimizer option).
+          viaIR: true,
         },
       },
     ],
