@@ -10,7 +10,7 @@ The assignment is based on Fungible Tokens that follow the ERC20 standard. In cl
 
 - The submission is your private repository. Setup instructions are in the setup section.
 
-- Due date is `22 May 2026`
+- Due date is `29 May 2026`
 
 ## Setup
 
